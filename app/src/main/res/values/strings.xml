@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">AmantePelicula</string>
+    <string name="app_name">AmantePelicula_RomoM</string>
     <string name="movie_name">Dune: Part Two</string>
+    <string name="movie_evaluation">8,4/10</string>
+    <string name="number_reviews">715mi</string>
     <string name="button_rent">Rentar</string>
     <string name="button_buy">Comprar</string>
     <string name="genre">Género</string>
@@ -9,9 +11,8 @@
     <string name="genere_fantasy">Fantasía</string>
     <string name="genere_science_fiction">Ciencia Ficción</string>
     <string name="movie_description">Dune: La segunda parte explora el mítico viaje de Paul
-        Atreides mientras se una con Chani y los Frenen mientras está en un camino de guerra
-        de venganza controla los conspiradores que destruyeron a su familia. Frente a una elección entre el amor de su vida
-        y e destino del universo conocidom se esfuerza por evitar un futuro terrible que solo él puede prever.</string>
-    <string name="movie_evaluation">8,4/10</string>
+        Atreides mientras se una con Chani y los Fremen mientras está en un camino de guerra
+        de venganza contra los conspiradores que destruyeron a su familia. Frente a una elección entre el amor de su vida
+        y el destino del universo conocido se esfuerza por evitar un futuro terrible que solo él puede prever.</string>
 
 </resources>
