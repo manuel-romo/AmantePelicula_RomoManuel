@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MovieDescription">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+</resources>

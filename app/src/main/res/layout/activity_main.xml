@@ -61,7 +61,7 @@
             android:layout_marginEnd="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/ivMovieImage"
             app:layout_constraintEnd_toStartOf="@+id/tvRating"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="@dimen/bias_star"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toEndOf="@+id/ivMovieImage"
             app:layout_constraintStart_toStartOf="@+id/tvMovieName"
@@ -75,7 +75,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:text="@string/movie_description"
-            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="@+id/ivSave"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/ivMovieImage"
@@ -122,7 +121,7 @@
             style="@style/GenreLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="@dimen/genre_start_margin"
             android:layout_marginTop="30dp"
             android:text="@string/genre"
             app:layout_constraintStart_toStartOf="@+id/ivMovieImage"
@@ -134,8 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_buy"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="@+id/ivSave"
             app:layout_constraintStart_toEndOf="@+id/btnRent"
             app:layout_constraintTop_toTopOf="@+id/btnRent" />
 
@@ -145,17 +143,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/intermediate_button_margin"
             android:text="@string/button_rent"
             app:layout_constraintEnd_toStartOf="@+id/btnBuy"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="@dimen/bias_button"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/ivMovieImage"
             app:layout_constraintTop_toBottomOf="@+id/ivMovieImage" />
 
         <ImageView
             android:id="@+id/ivSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/margen_minimo"
+            android:layout_marginEnd="@dimen/margin"
             app:layout_constraintBottom_toBottomOf="@+id/tvMovieName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -179,7 +179,7 @@
             android:layout_height="199dp"
 
 
-            android:layout_marginStart="@dimen/margen_minimo"
+            android:layout_marginStart="@dimen/margin"
             android:layout_marginTop="130dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -213,8 +213,10 @@
             app:flow_verticalGap="5dp"
             app:flow_wrapMode="chain"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/tvGenreLabel"
             app:layout_constraintTop_toTopOf="@+id/tvGenreLabel" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

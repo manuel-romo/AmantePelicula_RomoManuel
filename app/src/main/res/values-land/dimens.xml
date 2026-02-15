@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="margen_minimo">80dp</dimen>
+    <dimen name="margin">80dp</dimen>
+    <dimen name="intermediate_button_margin">15dp</dimen>
+    <dimen name="bias_button">0.0</dimen>
+    <dimen name="genre_start_margin">0dp</dimen>
+    <dimen name="bias_star">0.0</dimen>
 </resources>
