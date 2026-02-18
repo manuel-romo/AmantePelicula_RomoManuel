@@ -15,4 +15,8 @@
         de venganza contra los conspiradores que destruyeron a su familia. Frente a una elección entre el amor de su vida
         y el destino del universo conocido se esfuerza por evitar un futuro terrible que solo él puede prever.</string>
 
+    <string name="log_in_label">Iniciar sesión</string>
+    <string name="password_forgotten">¿Olvidaste tu contraseña?</string>
+    <string name="btn_enter">Entrar</string>
+    <string name="no_account">¿No tienes cuenta? Regístrate</string>
 </resources>

@@ -6,4 +6,5 @@
     <dimen name="bias_button">0.0</dimen>
     <dimen name="genre_start_margin">0dp</dimen>
     <dimen name="bias_star">0.0</dimen>
+    <dimen name="fab_margin">48dp</dimen>
 </resources>
