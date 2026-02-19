@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".MainActivity">
 
 
@@ -19,6 +18,7 @@
             android:layout_height="20dp"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="20dp"
+            app:tint="@color/icon_color"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/tvMovieDescription"
             app:layout_constraintTop_toBottomOf="@+id/tvMovieDescription"
@@ -29,6 +29,7 @@
             android:layout_width="26dp"
             android:layout_height="26dp"
             android:layout_marginEnd="14dp"
+            app:tint="@color/icon_color"
             app:layout_constraintBottom_toBottomOf="@+id/ivHeart"
             app:layout_constraintEnd_toStartOf="@+id/ivHeart"
             app:layout_constraintTop_toTopOf="@+id/ivHeart"
@@ -129,7 +130,6 @@
 
         <Button
             android:id="@+id/btnBuy"
-            style="@style/BuyButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_buy"
@@ -139,7 +139,6 @@
 
         <Button
             android:id="@+id/btnRent"
-            style="@style/RentButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -156,6 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margin"
+            app:tint="@color/icon_color"
             app:layout_constraintBottom_toBottomOf="@+id/tvMovieName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

@@ -19,4 +19,10 @@
     <string name="password_forgotten">¿Olvidaste tu contraseña?</string>
     <string name="btn_enter">Entrar</string>
     <string name="no_account">¿No tienes cuenta? Regístrate</string>
+
+    <string name="log_in_logo_description">Imagen de palomitas</string>
+
+    <string name="hint_user_name">Nombre de usuario</string>
+    <string name="hint_password">Contraseña</string>
+
 </resources>

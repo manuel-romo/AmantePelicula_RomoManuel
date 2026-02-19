@@ -3,11 +3,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="brown">#87661F</color>
-    <color name="yellow">#DFAF44</color>
-    <color name="lighter_yellow">#FFF3A8</color>
+    <color name="lighter_yellow">#FFF7C9</color>
     <color name="blue">#18629E</color>
+    <color name="lighter_blue">#90C5FF</color>
     <color name="darker_blue">#5E78EB</color>
     <color name="gray">#4D4D4D</color>
     <color name="stronger_gray">#2E2E2E</color>
+    <color name="icon_color">#FF000000</color>
 
 </resources>

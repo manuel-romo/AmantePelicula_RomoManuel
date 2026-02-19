@@ -15,19 +15,16 @@
 
     <style name="MovieTitle">
         <item name="android:textSize">23sp</item>
-        <item name="android:textColor">@color/gray</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="MovieRating">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/gray</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="NumberReviews">
         <item name="android:textSize">13sp</item>
-        <item name="android:textColor">@color/gray</item>
     </style>
 
 
@@ -36,17 +33,8 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="RentButton" parent="Button">
-        <item name="android:backgroundTint">@color/brown</item>
-    </style>
-
-    <style name="BuyButton" parent="Button">
-        <item name="android:backgroundTint">@color/yellow</item>
-    </style>
-
     <style name="GenreLabel">
         <item name="android:textSize">13sp</item>
-        <item name="android:textColor">@color/gray</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -57,9 +45,11 @@
 
     <style name="MovieDescription">
         <item name="android:textSize">13sp</item>
-        <item name="android:textColor">@color/gray</item>
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="SaveIcon">
+        <item name="android:tint">@color/black</item>
+    </style>
 
 </resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="GenreName">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/lighter_blue</item>
+    </style>
+
+    <style name="SaveIcon">
+        <item name="android:tint">@color/white</item>
+    </style>
+
+</resources>
