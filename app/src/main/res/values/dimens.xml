@@ -53,4 +53,5 @@ ID: 00000253080
     <dimen name="forgotten_password_label_margin_bottom">10sp</dimen>
     <dimen name="no_account_label_margin_top">10sp</dimen>
     <dimen name="no_account_label_margin_bottom">100sp</dimen>
+    <dimen name="scroll_view_log_in_divider_padding">20sp</dimen>
 </resources>

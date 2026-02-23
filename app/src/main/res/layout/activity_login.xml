@@ -10,7 +10,7 @@ ID: 00000253080
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:dividerPadding="20sp"
+    android:dividerPadding="@dimen/scroll_view_log_in_divider_padding"
     android:orientation="vertical"
     tools:context=".ActivityMovie">
 
