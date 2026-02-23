@@ -1,3 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Manuel Romo López
+ID: 00000253080
+-->
 <resources>
     <string name="app_name">AmantePelicula_RomoM</string>
     <string name="movie_name">Dune: Part Two</string>
@@ -24,5 +29,11 @@
 
     <string name="hint_user_name">Nombre de usuario</string>
     <string name="hint_password">Contraseña</string>
+    <string name="btn_like_description">Botón Me gusta</string>
+    <string name="btn_save_description">Botón Guardar</string>
+    <string name="star_image_description">Imagen de Estrella de calificación</string>
+    <string name="btn_heart_description">Botón Añadir a favoritos</string>
+    <string name="background_movie_description">Póster horizontal de película</string>
+    <string name="movie_image_description">Imagen principal de película</string>
 
 </resources>

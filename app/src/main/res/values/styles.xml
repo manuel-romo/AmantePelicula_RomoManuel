@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+Manuel Romo López
+ID: 00000253080
+-->
 <resources>
 
     <style name="Titles">
@@ -40,7 +44,7 @@
 
     <style name="GenreName">
         <item name="android:textSize">13sp</item>
-        <item name="android:textColor">@color/blue</item>
+        <item name="android:textColor">?attr/colorSecondary</item>
     </style>
 
     <style name="MovieDescription">

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Manuel Romo López
+ID: 00000253080
+-->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,11 +19,12 @@
 
         <ImageView
             android:id="@+id/ivHeart"
-            android:layout_width="38dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="20dp"
-            app:tint="@color/icon_color"
+            android:layout_width="@dimen/heart_width"
+            android:layout_height="@dimen/heart_height"
+            android:layout_marginTop="@dimen/heart_margin_top"
+            android:layout_marginBottom="@dimen/heart_margin_bottom"
+            android:contentDescription="@string/btn_heart_description"
+            app:tint="?attr/colorOnSurface"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/tvMovieDescription"
             app:layout_constraintTop_toBottomOf="@+id/tvMovieDescription"
@@ -26,10 +32,11 @@
 
         <ImageView
             android:id="@+id/ivLike"
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:layout_marginEnd="14dp"
-            app:tint="@color/icon_color"
+            android:layout_width="@dimen/like_width"
+            android:layout_height="@dimen/like_height"
+            android:layout_marginEnd="@dimen/like_margin_end"
+            app:tint="?attr/colorOnSurface"
+            android:contentDescription="@string/btn_like_description"
             app:layout_constraintBottom_toBottomOf="@+id/ivHeart"
             app:layout_constraintEnd_toStartOf="@+id/ivHeart"
             app:layout_constraintTop_toTopOf="@+id/ivHeart"
@@ -39,12 +46,14 @@
             android:id="@+id/tvRating"
             style="@style/MovieRating"
             android:layout_width="wrap_content"
-            android:layout_height="22dp"
+            android:layout_height="wrap_content"
             android:text="@string/movie_evaluation"
+            app:layout_constraintBottom_toTopOf="@+id/tvNumberReviews"
             app:layout_constraintEnd_toEndOf="@+id/tvMovieName"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/ivRatingStar"
-            app:layout_constraintTop_toTopOf="@+id/ivRatingStar" />
+            app:layout_constraintTop_toTopOf="@+id/ivRatingStar"
+            app:layout_constraintWidth="wrap_content" />
 
         <TextView
             android:id="@+id/tvNumberReviews"
@@ -53,13 +62,15 @@
             android:layout_height="wrap_content"
             android:text="@string/number_reviews"
             app:layout_constraintBottom_toBottomOf="@+id/ivRatingStar"
-            app:layout_constraintStart_toStartOf="@+id/tvRating" />
+            app:layout_constraintStart_toStartOf="@+id/tvRating"
+            app:layout_constraintTop_toBottomOf="@+id/tvRating" />
 
         <ImageView
             android:id="@+id/ivRatingStar"
-            android:layout_width="40dp"
-            android:layout_height="43dp"
-            android:layout_marginEnd="10dp"
+            android:layout_width="@dimen/star_width"
+            android:layout_height="@dimen/star_height"
+            android:layout_marginEnd="@dimen/star_margin_end"
+            android:contentDescription="@string/star_image_description"
             app:layout_constraintBottom_toBottomOf="@+id/ivMovieImage"
             app:layout_constraintEnd_toStartOf="@+id/tvRating"
             app:layout_constraintHorizontal_bias="@dimen/bias_star"
@@ -74,56 +85,67 @@
             style="@style/MovieDescription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="@dimen/movie_description_margin_top"
+            android:layout_marginEnd="@dimen/movie_description_margin_end"
             android:text="@string/movie_description"
-            app:layout_constraintEnd_toEndOf="@+id/ivSave"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/ivMovieImage"
-            app:layout_constraintTop_toBottomOf="@+id/fwGenres" />
+            app:layout_constraintTop_toBottomOf="@+id/fwGenres"
+            app:layout_constraintWidth_max="@dimen/max_width_movie_description"/>
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/fwGenres"
+            android:layout_width="@dimen/flow_genres_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/flow_genres_margin_start"
+            android:layout_marginEnd="@dimen/flow_genres_margin_end"
+            app:constraint_referenced_ids="tvActionGenre,tvDramaGenre,tvFantasyGenre,tvScienceFictionGenre"
+            app:flow_horizontalAlign="start"
+            app:flow_horizontalBias="0.0"
+            app:flow_horizontalGap="@dimen/flow_genres_horizontal_gap"
+            app:flow_horizontalStyle="packed"
+            app:flow_verticalGap="@dimen/flow_genres_vertical_gap"
+            app:flow_wrapMode="chain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvGenreLabel"
+            app:layout_constraintTop_toTopOf="@+id/tvGenreLabel" />
 
         <TextView
             android:id="@+id/tvScienceFictionGenre"
             style="@style/GenreName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/genere_science_fiction"
-            tools:layout_editor_absoluteX="176dp"
-            tools:layout_editor_absoluteY="467dp" />
+            android:text="@string/genere_science_fiction" />
 
         <TextView
             android:id="@+id/tvFantasyGenre"
             style="@style/GenreName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/genere_fantasy"
-            tools:layout_editor_absoluteX="298dp"
-            tools:layout_editor_absoluteY="437dp" />
+            android:text="@string/genere_fantasy" />
 
         <TextView
             android:id="@+id/tvDramaGenre"
             style="@style/GenreName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/genere_drama"
-            tools:layout_editor_absoluteX="226dp"
-            tools:layout_editor_absoluteY="437dp" />
+            android:text="@string/genere_drama" />
 
         <TextView
             android:id="@+id/tvActionGenre"
             style="@style/GenreName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/genere_action"
-            tools:layout_editor_absoluteX="176dp"
-            tools:layout_editor_absoluteY="437dp" />
+            android:text="@string/genere_action"/>
 
         <TextView
             android:id="@+id/tvGenreLabel"
             style="@style/GenreLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/genre_start_margin"
-            android:layout_marginTop="30dp"
+            android:layout_marginStart="@dimen/genre_label_margin_start"
+            android:layout_marginTop="@dimen/genre_label_margin_top"
             android:text="@string/genre"
             app:layout_constraintStart_toStartOf="@+id/ivMovieImage"
             app:layout_constraintTop_toBottomOf="@+id/btnRent" />
@@ -141,7 +163,7 @@
             android:id="@+id/btnRent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/btn_rent_margin_top"
             android:layout_marginEnd="@dimen/intermediate_button_margin"
             android:text="@string/button_rent"
             app:layout_constraintEnd_toStartOf="@+id/btnBuy"
@@ -154,19 +176,20 @@
             android:id="@+id/ivSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/margin"
-            app:tint="@color/icon_color"
+            android:contentDescription="@string/btn_save_description"
             app:layout_constraintBottom_toBottomOf="@+id/tvMovieName"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvMovieDescription"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/tvMovieName"
             app:layout_constraintTop_toTopOf="@+id/tvMovieName"
-            app:srcCompat="@drawable/baseline_save_alt_24" />
+            app:srcCompat="@drawable/baseline_save_alt_24"
+            app:tint="?attr/colorOnSurface" />
 
         <ImageView
             android:id="@+id/ivMovieBackground"
-            android:layout_width="0dp"
-            android:layout_height="229dp"
+            android:layout_width="@dimen/movie_background_width"
+            android:layout_height="@dimen/movie_background_height"
+            android:contentDescription="@string/background_movie_description"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -175,14 +198,12 @@
 
         <ImageView
             android:id="@+id/ivMovieImage"
-            android:layout_width="131dp"
-            android:layout_height="199dp"
-
-
-            android:layout_marginTop="130dp"
-            android:layout_marginEnd="15dp"
+            android:layout_width="@dimen/movie_image_width"
+            android:layout_height="@dimen/movie_image_height"
+            android:layout_marginTop="@dimen/movie_image_margin_top"
+            android:contentDescription="@string/movie_image_description"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintHorizontal_bias="0.09"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/dune_image" />
@@ -192,32 +213,14 @@
             style="@style/MovieTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/movie_name_margin_start"
+            android:layout_marginTop="@dimen/movie_name_margin_top"
             android:text="@string/movie_name"
             app:layout_constraintEnd_toStartOf="@+id/ivSave"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toEndOf="@+id/ivMovieImage"
             app:layout_constraintTop_toBottomOf="@+id/ivMovieBackground" />
-
-        <androidx.constraintlayout.helper.widget.Flow
-            android:id="@+id/fwGenres"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="45dp"
-            app:constraint_referenced_ids="tvActionGenre,tvDramaGenre,tvFantasyGenre,tvScienceFictionGenre"
-            app:flow_horizontalAlign="start"
-            app:flow_horizontalBias="0.0"
-            app:flow_horizontalGap="40dp"
-            app:flow_horizontalStyle="packed"
-            app:flow_verticalGap="5dp"
-            app:flow_wrapMode="chain"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/tvGenreLabel"
-            app:layout_constraintTop_toTopOf="@+id/tvGenreLabel" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
